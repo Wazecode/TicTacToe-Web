@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>TicTacToe</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+{
+	font-family: 'Comic Neue', cursive;
+}
+.tiles {
+	width: 15vw;
+	height: 15vw;
+	padding: 2px;
+	margin: 1px;
+	font-size: 350%;
+}
+
+#GameBoard {
+	width: max-content;
+	height: auto;
+
+}
+
+#GameHeading {
+	text-align: center;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+</style>
+<body>
+	<div id="GameBoard" class="centered">
+		<h1 id="GameHeading">TicTacToe</h1>
+		<button class="tiles" id="tile00" onclick="game.clickTile(0, 0)">. </button>
+		<button class="tiles" id="tile01" onclick="game.clickTile(0, 1)">. </button>
+		<button class="tiles" id="tile02" onclick="game.clickTile(0, 2)">. </button>
+		<br>
+		<button class="tiles" id="tile10" onclick="game.clickTile(1, 0)">. </button>
+		<button class="tiles" id="tile11" onclick="game.clickTile(1, 1)">. </button>
+		<button class="tiles" id="tile12" onclick="game.clickTile(1, 2)">. </button>
+		<br>
+		<button class="tiles" id="tile20" onclick="game.clickTile(2, 0)">. </button>
+		<button class="tiles" id="tile21" onclick="game.clickTile(2, 1)">. </button>
+		<button class="tiles" id="tile22" onclick="game.clickTile(2, 2)">. </button>
+		<br><br>
+	<button onclick="reset()">Restart</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
